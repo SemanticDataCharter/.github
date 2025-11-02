@@ -77,7 +77,7 @@ This organization maintains the core specification and reference implementation 
   - sdcvalidator (Python)
   - sdcvalidatorJS (TypeScript)
 - **[AxiusSDC](https://github.com/AxiusSDC)** - Commercial platform
-  - SDCStudio (Django web application)
+  - [SDCStudio](https://axius-sdc.com) (Django web application)
 
 ## Resources
 

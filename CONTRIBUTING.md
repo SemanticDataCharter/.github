@@ -155,6 +155,8 @@ npm test
 
 ### Django Projects (SDCStudio)
 
+**Note:** SDCStudio is a proprietary commercial platform. See [https://axius-sdc.com](https://axius-sdc.com) for information.
+
 **Requirements:**
 - Python 3.11+
 - Docker and Docker Compose
@@ -162,6 +164,7 @@ npm test
 
 **Setup:**
 ```bash
+# For authorized developers only
 git clone https://github.com/AxiusSDC/SDCStudio.git
 cd SDCStudio
 conda activate SDCStudio

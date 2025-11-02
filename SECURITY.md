@@ -69,7 +69,7 @@ Security updates are provided for the following versions:
 
 | Project | Version | Supported |
 | ------- | ------- | --------- |
-| **SDCStudio** | 4.0.x | ✅ Yes (proprietary support) |
+| **[SDCStudio](https://axius-sdc.com)** | 4.0.x | ✅ Yes (proprietary support) |
 
 **Note**: All SDC4 projects use 4.x.x versioning where MAJOR version (4) = SDC generation.
 
@@ -357,6 +357,8 @@ npm audit fix
 ```
 
 ### SDCStudio (Django)
+
+**Note:** SDCStudio is a proprietary commercial platform. See [https://axius-sdc.com](https://axius-sdc.com) for information.
 
 **Security Features:**
 - CSRF protection enabled

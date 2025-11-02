@@ -66,7 +66,7 @@ SDC4 combines:
 
 ### Commercial Platform
 
-- **[SDCStudio](https://github.com/AxiusSDC/SDCStudio)** v4.0.0 - Web application for model generation (proprietary)
+- **[SDCStudio](https://axius-sdc.com)** v4.0.0 - Web application for model generation (proprietary)
 
 All SDC4 projects use **4.x.x** versioning where the MAJOR version (4) represents the SDC generation.
 
@@ -187,7 +187,7 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 
 ## 🏢 About
 
-**Developer**: [Axius SDC, Inc.](https://axius-sdc.github.io)
+**Developer**: [Axius SDC, Inc.](https://axius-sdc.com)
 **Contact**: contact@axius-sdc.com
 **License**: Apache 2.0 (specification and open source tools)
 
@@ -201,7 +201,7 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 ## 🌐 Links
 
 - **Website**: [semanticdatacharter.com](https://semanticdatacharter.com)
-- **Company**: [axius-sdc.github.io](https://axius-sdc.github.io)
+- **Company**: [axius-sdc.com](https://axius-sdc.com)
 - **LinkedIn**: [Axius SDC](https://www.linkedin.com/company/axius-sdc)
 - **Email**: contact@axius-sdc.com
 
