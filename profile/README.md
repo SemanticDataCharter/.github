@@ -57,7 +57,11 @@ SDC4 combines:
 
 - **[SDCRM](https://github.com/SemanticDataCharter/SDCRM)** v4.0.0 - Reference model, schemas, and specification
 - **[sdc-xml2graph](https://github.com/SemanticDataCharter/sdc-xml2graph)** v4.0.0 - Transform SDC4 XML to knowledge graphs (Q1-2026)
-- **[SDCObsidianTemplate](https://github.com/SemanticDataCharter/SDCObsidianTemplate)** v4.0.0 - Markdown templates
+
+### Template Creation
+
+- **[Form2SDCTemplate](https://github.com/SemanticDataCharter/Form2SDCTemplate)** v4.4.0 - Convert PDF, DOCX, and image forms into SDC4 templates using Gemini AI. Available as a [Python package](https://pypi.org/project/form2sdc/), [Google Colab notebook](https://colab.research.google.com/github/SemanticDataCharter/Form2SDCTemplate/blob/main/notebooks/form_to_template.ipynb), or LLM instruction file.
+- **[SDCObsidianTemplate](https://github.com/SemanticDataCharter/SDCObsidianTemplate)** v4.3.0 - Interactive Obsidian Templater plugin for building SDC4 markdown templates with guided prompts, domain-aware defaults, and SDC4 participation model support.
 
 ### Validation & Tools
 
@@ -66,7 +70,7 @@ SDC4 combines:
 
 ### Commercial Platform
 
-- **[SDCStudio](https://axius-sdc.com)** v4.0.0 - Web application for model generation (proprietary)
+- **[SDCStudio](https://sdcstudio.axius-sdc.com)** v4.0.0 - Web application for AI-powered SDC4 model generation, schema export, and semantic enrichment (60-day free trial)
 
 All SDC4 projects use **4.x.x** versioning where the MAJOR version (4) represents the SDC generation.
 
@@ -113,24 +117,45 @@ SDC4 is built on international standards:
 
 ## 💻 Quick Start
 
-### Install sdcvalidator
+### Convert a Form to an SDC4 Template
+
+The fastest path from existing form to SDC4 model:
+
+1. Open the [Form2SDCTemplate Colab notebook](https://colab.research.google.com/github/SemanticDataCharter/Form2SDCTemplate/blob/main/notebooks/form_to_template.ipynb)
+2. Enter your free [Google AI API key](https://aistudio.google.com/apikey)
+3. Upload a PDF, DOCX, or image form
+4. Download the generated SDC4 markdown template
+5. Upload to [SDCStudio](https://sdcstudio.axius-sdc.com) for processing
+
+Or use the Python package:
+
+```bash
+pip install "form2sdc[gemini]"
+```
+
+```python
+from form2sdc.analyzer import GeminiAnalyzer
+from form2sdc.core import FormToTemplatePipeline
+from pathlib import Path
+
+analyzer = GeminiAnalyzer(api_key="YOUR_KEY")
+pipeline = FormToTemplatePipeline(analyzer)
+result = pipeline.process(Path("your_form.pdf"))
+
+print(result.template)          # SDC4 markdown
+print(result.validation.valid)  # True if valid
+```
+
+### Validate SDC4 Data
 
 ```bash
 pip install sdcvalidator
 ```
 
-### Validate SDC4 Data
-
 ```python
 from sdcvalidator import SDC4Validator
 
-# Create validator with schema
 validator = SDC4Validator('schema.xsd')
-
-# Validate and recover
-recovered = validator.validate_with_recovery('data.xml')
-
-# Generate validation report
 report = validator.validateAndReport('data.xml')
 print(f"Errors: {report.errorCount}")
 ```
@@ -181,7 +206,7 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 
 - **Website**: [https://semanticdatacharter.com](https://semanticdatacharter.com)
 - **Specification**: [sdc4-specification.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/sdc4/specification/sdc4-specification.md)
-- **PyPI Package**: [sdcvalidator](https://pypi.org/project/sdcvalidator/)
+- **PyPI Packages**: [sdcvalidator](https://pypi.org/project/sdcvalidator/) | [form2sdc](https://pypi.org/project/form2sdc/)
 - **Historical Archive**: [GitHub](https://github.com/Axius-SDC/historical-archive)
 - **AI Instructions**: [ai.txt](https://semanticdatacharter.com/ai.txt)
 
@@ -215,4 +240,4 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 
 **Building the future of trusted data, one semantic model at a time.** 🚀
 
-*Last Updated: November 2025*
+*Last Updated: February 2026*
