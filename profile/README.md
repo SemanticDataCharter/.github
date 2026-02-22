@@ -65,8 +65,7 @@ SDC4 combines:
 
 ### Validation & Tools
 
-- **[sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator)** v4.1.0 - SDC4 structural validator ([PyPI](https://pypi.org/project/sdcvalidator/))
-- **[sdcvalidatorJS (TypeScript)](https://github.com/SemanticDataCharter/sdcvalidatorJS)** v4.0.0 - JavaScript/TypeScript implementation
+- **[sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator)** v4.1.0 - SDC4 structural validator with two-tier error classification ([PyPI](https://pypi.org/project/sdcvalidator/))
 
 ### Commercial Platform
 
