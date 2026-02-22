@@ -65,8 +65,8 @@ SDC4 combines:
 
 ### Validation & Tools
 
-- **[sdcvalidator (Python)](https://github.com/Axius-SDC/sdcvalidator)** v4.0.1 - Python validation library
-- **[sdcvalidatorJS (TypeScript)](https://github.com/Axius-SDC/sdcvalidatorJS)** v4.0.0 - JavaScript/TypeScript implementation
+- **[sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator)** v4.1.0 - SDC4 structural validator ([PyPI](https://pypi.org/project/sdcvalidator/))
+- **[sdcvalidatorJS (TypeScript)](https://github.com/SemanticDataCharter/sdcvalidatorJS)** v4.0.0 - JavaScript/TypeScript implementation
 
 ### Commercial Platform
 
@@ -156,8 +156,13 @@ pip install sdcvalidator
 from sdcvalidator import SDC4Validator
 
 validator = SDC4Validator('schema.xsd')
-report = validator.validateAndReport('data.xml')
-print(f"Errors: {report.errorCount}")
+result = validator.validate('data.xml')
+
+if result.is_valid:
+    print("Valid!")
+else:
+    print(f"Structural errors: {len(result.structural_errors)}")
+    print(f"Semantic errors: {len(result.semantic_errors)}")
 ```
 
 ### Explore the Reference Model
