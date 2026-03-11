@@ -4,6 +4,8 @@
 
 The **Semantic Data Charter (SDC4)** is an open specification for creating self-describing, semantically rich data models that work seamlessly across systems and languages.
 
+> **This organization and all repositories within it are controlled and maintained by [Axius SDC, Inc.](https://axius-sdc.github.io)**
+
 ## 🌟 Vision
 
 **Make data trustworthy, interoperable, and permanent.**
@@ -216,7 +218,7 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 
 ## 🏢 About
 
-**Developer**: [Axius SDC, Inc.](https://axius-sdc.com)
+**Controlled and maintained by**: [Axius SDC, Inc.](https://axius-sdc.github.io)
 **Contact**: contact@axius-sdc.com
 **License**: Apache 2.0 (specification and open source tools)
 

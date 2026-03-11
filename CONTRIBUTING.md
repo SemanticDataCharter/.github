@@ -2,6 +2,8 @@
 
 Thank you for your interest in contributing to the **Semantic Data Charter (SDC4)** ecosystem! We welcome contributions from developers, researchers, documentation writers, and users around the world.
 
+The SemanticDataCharter GitHub organization and all repositories within it are controlled and maintained by [Axius SDC, Inc.](https://axius-sdc.github.io)
+
 ## Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
