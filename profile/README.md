@@ -1,59 +1,61 @@
-# Semantic Data Charter™
+# Semantic Data Charter
 
-### The Blueprint for Trusted Data
+### The Deterministic Data Substrate for Autonomous Systems
 
-The **Semantic Data Charter (SDC4)** is an open specification for creating self-describing, semantically rich data models that work seamlessly across systems and languages.
+The **Semantic Data Charter (SDC)** is an open specification for creating self-describing, semantically rich data models that work seamlessly across systems, languages, and autonomous agents.
 
 > **This organization and all repositories within it are controlled and maintained by [Axius SDC, Inc.](https://axius-sdc.github.io)**
 
-## 🌟 Vision
+## Vision
 
-**Make data trustworthy, interoperable, and permanent.**
+**Data infrastructure engineered for fully automated machine processing.**
 
-We believe the foundation of data trust should be:
+We saw where technology was heading 25 years ago: machines would become the primary consumers and producers of structured data. When that happened, every system built for human interpretation would break. SDC was built for that world.
+
 - **Open** - Built on international standards, not proprietary lock-in
 - **Accessible** - Language-agnostic, enabling global collaboration
 - **Governed** - Built-in lineage and provenance for accountability
 - **Permanent** - CUID-based immutability for long-term data integrity
 
-## 🔑 Core Principles
+## Core Principles
 
-### Three Pillars of SDC4
+### Three Pillars of SDC
 
 1. **Enforce Governance** - Built-in lineage and provenance tracking
 2. **Embed Meaning** - Semantic interoperability via RDF/OWL
 3. **Mandate Quality** - Validation rules and quality constraints
 
-## 🏗️ What is SDC4?
+## What is SDC?
 
 Think of it as: **"Protocol Buffers with semantics and governance"**
 
-SDC4 combines:
+SDC combines:
 - **Structure** (like Protocol Buffers) - XML Schema 1.1 for data types and constraints
 - **Semantics** (like RDF/OWL) - Meaning and relationships
 - **Validation** (like SHACL) - Quality rules and business logic
 - **Governance** - Lineage, provenance, and audit trails
 - **Packaging** - Self-contained, queryable data packages
 
-**Result**: Data that is self-describing, semantically rich, and audit-ready.
+**Result**: Data that is self-describing, semantically rich, and audit-ready - readable by machines without human interpretation.
 
-## 🚀 Key Features
+## Key Features
 
-- ✅ **Language Agnostic** - Model in Portuguese, French, Japanese, Spanish, etc.
-- ✅ **Standards-Based** - Built on 16+ W3C, ISO, and IETF standards
-- ✅ **AI Governance** - Built-in lineage for trustworthy, explainable AI
-- ✅ **Namespace Versioning** - CUIDs for immutable, evolvable components
-- ✅ **Multi-Format Export** - RDF, OWL, SHACL, FHIR, GraphQL, JSON, GQL
+- **Language Agnostic** - Model in Portuguese, French, Japanese, Spanish, etc.
+- **Standards-Based** - Built on 16+ W3C, ISO, and IETF standards
+- **AI Governance** - Built-in lineage for trustworthy, explainable AI
+- **Namespace Versioning** - CUIDs for immutable, evolvable components
+- **Multi-Format Export** - RDF, OWL, SHACL, FHIR, GraphQL, JSON, GQL
 
-## 🌍 Use Cases
+## Use Cases
 
 - **Enterprise Data Integration** - Canonical models for multi-system environments
 - **AI Governance** - Data packages with automatic lineage for trustworthy AI
 - **Cross-Border Exchange** - Semantic interoperability without translation
 - **Regulatory Compliance** - Built-in audit trails and provenance
 - **Legacy Modernization** - Bridge between old and new systems
+- **Agentic Infrastructure** - Deterministic data substrate for autonomous agents
 
-## 📦 SDC4 Ecosystem
+## SDC Ecosystem
 
 ### Core Repositories
 
@@ -62,8 +64,8 @@ SDC4 combines:
 
 ### Template Creation
 
-- **[Form2SDCTemplate](https://github.com/SemanticDataCharter/Form2SDCTemplate)** v4.4.0 - Convert PDF, DOCX, and image forms into SDC4 templates using Gemini AI. Available as a [Python package](https://pypi.org/project/form2sdc/), [Google Colab notebook](https://colab.research.google.com/github/SemanticDataCharter/Form2SDCTemplate/blob/main/notebooks/form_to_template.ipynb), or LLM instruction file.
-- **[SDCObsidianTemplate](https://github.com/SemanticDataCharter/SDCObsidianTemplate)** v4.3.0 - Interactive Obsidian Templater plugin for building SDC4 markdown templates with guided prompts, domain-aware defaults, and SDC4 participation model support.
+- **[Form2SDCTemplate](https://github.com/SemanticDataCharter/Form2SDCTemplate)** v4.4.0 - Convert PDF, DOCX, and image forms into SDC templates using Gemini AI. Available as a [Python package](https://pypi.org/project/form2sdc/), [Google Colab notebook](https://colab.research.google.com/github/SemanticDataCharter/Form2SDCTemplate/blob/main/notebooks/form_to_template.ipynb), or LLM instruction file.
+- **[SDCObsidianTemplate](https://github.com/SemanticDataCharter/SDCObsidianTemplate)** v4.3.0 - Interactive Obsidian Templater plugin for building SDC markdown templates with guided prompts, domain-aware defaults, and SDC participation model support.
 
 ### Validation & Tools
 
@@ -71,13 +73,13 @@ SDC4 combines:
 
 ### Commercial Platform
 
-- **[SDCStudio](https://sdcstudio.axius-sdc.com)** v4.0.0 - Web application for AI-powered SDC4 model generation, schema export, and semantic enrichment (60-day free trial)
+- **[SDCStudio](https://sdcstudio.axius-sdc.com)** v4.0.0 - Web application for AI-powered SDC model generation, schema export, and semantic enrichment
 
-All SDC4 projects use **4.x.x** versioning where the MAJOR version (4) represents the SDC generation.
+All SDC projects use **4.x.x** versioning where the MAJOR version (4) represents the current SDC generation.
 
-## 🔬 15+ Years of Research Foundation
+## 25 Years of Engineering for This Moment
 
-SDC4 is not a new idea—it's the commercialization of 15+ years of validated research:
+SDC was not built in response to the AI era. It was built in anticipation of it.
 
 **Evolution Timeline:**
 - **2000-2009**: FreePM/TORCH (open source healthcare applications)
@@ -92,9 +94,9 @@ SDC4 is not a new idea—it's the commercialization of 15+ years of validated re
 
 **Verification:** [Historical Archive](https://github.com/Axius-SDC/historical-archive) - 4.2GB, 76,313 files, full Git history (2013-2025)
 
-## 🛠️ Technology Stack
+## Technology Stack
 
-SDC4 is built on international standards:
+SDC is built on international standards:
 
 **W3C Standards:**
 - XML Schema 1.1 (structure)
@@ -116,16 +118,16 @@ SDC4 is built on international standards:
 
 **Total**: 16+ international standards
 
-## 💻 Quick Start
+## Quick Start
 
-### Convert a Form to an SDC4 Template
+### Convert a Form to an SDC Template
 
-The fastest path from existing form to SDC4 model:
+The fastest path from existing form to SDC model:
 
 1. Open the [Form2SDCTemplate Colab notebook](https://colab.research.google.com/github/SemanticDataCharter/Form2SDCTemplate/blob/main/notebooks/form_to_template.ipynb)
 2. Enter your free [Google AI API key](https://aistudio.google.com/apikey)
 3. Upload a PDF, DOCX, or image form
-4. Download the generated SDC4 markdown template
+4. Download the generated SDC markdown template
 5. Upload to [SDCStudio](https://sdcstudio.axius-sdc.com) for processing
 
 Or use the Python package:
@@ -143,11 +145,11 @@ analyzer = GeminiAnalyzer(api_key="YOUR_KEY")
 pipeline = FormToTemplatePipeline(analyzer)
 result = pipeline.process(Path("your_form.pdf"))
 
-print(result.template)          # SDC4 markdown
+print(result.template)          # SDC markdown
 print(result.validation.valid)  # True if valid
 ```
 
-### Validate SDC4 Data
+### Validate SDC Data
 
 ```bash
 pip install sdcvalidator
@@ -175,16 +177,16 @@ cd SDCRM
 # See sdc4/specification/sdc4-specification.md
 ```
 
-## 🤝 Contributing
+## Contributing
 
-We welcome contributions to all SDC4 projects!
+We welcome contributions to all SDC projects!
 
 ### Ways to Contribute
 
 - **Code** - Implement features, fix bugs, improve performance
 - **Documentation** - Write guides, improve examples, translate content
 - **Testing** - Write tests, report bugs, verify fixes
-- **Use Cases** - Share how you're using SDC4
+- **Use Cases** - Share how you're using SDC
 - **Feedback** - Suggest improvements, discuss architecture
 
 ### Getting Started
@@ -199,7 +201,7 @@ We welcome contributions to all SDC4 projects!
 
 Each repository has its own CONTRIBUTING.md and CLAUDE.md files with specific guidance for that project.
 
-## 🔒 Security
+## Security
 
 We take security seriously. See our [Security Policy](SECURITY.md) for:
 - Vulnerability reporting
@@ -208,15 +210,16 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 
 **Report vulnerabilities**: security@axius-sdc.com
 
-## 📚 Resources
+## Resources
 
 - **Website**: [https://semanticdatacharter.com](https://semanticdatacharter.com)
 - **Specification**: [sdc4-specification.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/sdc4/specification/sdc4-specification.md)
+- **Practitioners**: [https://axius-sdc.com/practitioners/](https://axius-sdc.com/practitioners/)
 - **PyPI Packages**: [sdcvalidator](https://pypi.org/project/sdcvalidator/) | [form2sdc](https://pypi.org/project/form2sdc/)
 - **Historical Archive**: [GitHub](https://github.com/Axius-SDC/historical-archive)
 - **AI Instructions**: [ai.txt](https://semanticdatacharter.com/ai.txt)
 
-## 🏢 About
+## About
 
 **Controlled and maintained by**: [Axius SDC, Inc.](https://axius-sdc.github.io)
 **Contact**: contact@axius-sdc.com
@@ -229,21 +232,21 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 
 **Team**: International (US, Canada, Brazil), 40+ years combined experience
 
-## 🌐 Links
+## Links
 
 - **Website**: [semanticdatacharter.com](https://semanticdatacharter.com)
 - **Company**: [axius-sdc.com](https://axius-sdc.com)
 - **LinkedIn**: [Axius SDC](https://www.linkedin.com/company/axius-sdc)
 - **Email**: contact@axius-sdc.com
 
-## 📄 License
+## License
 
-- **SDC4 Specification**: Apache 2.0
+- **SDC Specification**: Apache 2.0
 - **Open Source Libraries**: Apache 2.0
-- **Trademarks**: "Semantic Data Charter" and "SDC4" owned by Axius SDC, Inc.
+- **Trademarks**: "Semantic Data Charter" and "SDC" are trademarks of Axius SDC, Inc.
 
 ---
 
-**Building the future of trusted data, one semantic model at a time.** 🚀
+**The autonomous era needs deterministic data. The substrate is ready.**
 
-*Last Updated: February 2026*
+*Last Updated: April 2026*
