@@ -60,6 +60,7 @@ Individual repositories can override these defaults by creating their own files.
 
 - **SDCRM** - Has repo-specific CONTRIBUTING.md with RFC process for schema changes
 - **sdcvalidator** - Has Python-specific CONTRIBUTING.md and CLAUDE.md
+- **sdcgovernance** - Has Python-specific CONTRIBUTING.md, CLAUDE.md, and standards compliance issue template
 - **sdcvalidatorJS** - Has TypeScript-specific CONTRIBUTING.md and CLAUDE.md
 
 When a repository has its own files, they take precedence over these organization-wide defaults.
@@ -70,16 +71,18 @@ This organization maintains the core specification and reference implementation 
 
 ### Core Repositories
 - **[SDCRM](https://github.com/SemanticDataCharter/SDCRM)** - Reference model, schemas, specification
-- **[sdc-xml2graph](https://github.com/SemanticDataCharter/sdc-xml2graph)** - XML to knowledge graph transformation (Q1-2026)
+- **[sdc-xml2graph](https://github.com/SemanticDataCharter/sdc-xml2graph)** - XML to knowledge graph transformation
 - **[SDCObsidianTemplate](https://github.com/SemanticDataCharter/SDCObsidianTemplate)** - Markdown templates
+
+### Validation & Governance
+- **[sdcvalidator](https://github.com/SemanticDataCharter/sdcvalidator)** - Structural validation (XSD schema conformance, two-tier error classification) - [PyPI](https://pypi.org/project/sdcvalidator/)
+- **[sdcgovernance](https://github.com/SemanticDataCharter/sdcgovernance)** - Governance advisory engine (24 standards, OASIS XACML decisions, hash-chained receipts, MCP server) - [PyPI](https://pypi.org/project/sdcgovernance/)
 
 ### Related Organizations
 
-- **[Axius-SDC](https://github.com/Axius-SDC)** - Commercial tools and validation libraries
-  - sdcvalidator (Python)
-  - sdcvalidatorJS (TypeScript)
+- **[Axius-SDC](https://github.com/Axius-SDC)** - Commercial tools and practitioner program
 - **[AxiusSDC](https://github.com/AxiusSDC)** - Commercial platform
-  - [SDCStudio](https://axius-sdc.com) (Django web application)
+  - [SDCStudio](https://sdcstudio.axius-sdc.com) (Django web application)
 
 ## Resources
 
@@ -126,4 +129,4 @@ git push origin main
 
 **Building the future of trusted data together.** 🚀
 
-*Last Updated: November 2025*
+*Last Updated: April 2026*

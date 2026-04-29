@@ -41,8 +41,8 @@ SDC combines:
 ## Key Features
 
 - **Language Agnostic** - Model in Portuguese, French, Japanese, Spanish, etc.
-- **Standards-Based** - Built on 16+ W3C, ISO, and IETF standards
-- **AI Governance** - Built-in lineage for trustworthy, explainable AI
+- **Standards-Based** - Built on 24 international standards from W3C, OASIS, OMG, ISO, IETF, and IANA
+- **AI Governance** - Runtime enforcement via OASIS XACML decisions with tamper-evident receipts
 - **Namespace Versioning** - CUIDs for immutable, evolvable components
 - **Multi-Format Export** - RDF, OWL, SHACL, FHIR, GraphQL, JSON, GQL
 
@@ -67,9 +67,10 @@ SDC combines:
 - **[Form2SDCTemplate](https://github.com/SemanticDataCharter/Form2SDCTemplate)** v4.4.0 - Convert PDF, DOCX, and image forms into SDC templates using Gemini AI. Available as a [Python package](https://pypi.org/project/form2sdc/), [Google Colab notebook](https://colab.research.google.com/github/SemanticDataCharter/Form2SDCTemplate/blob/main/notebooks/form_to_template.ipynb), or LLM instruction file.
 - **[SDCObsidianTemplate](https://github.com/SemanticDataCharter/SDCObsidianTemplate)** v4.3.0 - Interactive Obsidian Templater plugin for building SDC markdown templates with guided prompts, domain-aware defaults, and SDC participation model support.
 
-### Validation & Tools
+### Validation & Governance
 
 - **[sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator)** v4.1.0 - SDC4 structural validator with two-tier error classification ([PyPI](https://pypi.org/project/sdcvalidator/))
+- **[sdcgovernance (Python)](https://github.com/SemanticDataCharter/sdcgovernance)** v4.0.0 - Governance advisory engine implementing 24 standards from W3C, OASIS, OMG, ISO, IETF, IANA. Returns OASIS XACML decisions (PERMIT/DENY/INDETERMINATE/NOT_APPLICABLE) with SHA-256 hash-chained tamper-evident receipts. MCP server included. ([PyPI](https://pypi.org/project/sdcgovernance/))
 
 ### Commercial Platform
 
@@ -116,7 +117,13 @@ SDC is built on international standards:
 - RFC 8259 (JSON)
 - And more...
 
-**Total**: 16+ international standards
+**OASIS Standards:**
+- XACML 3.0 (governance decisions)
+
+**OMG Standards:**
+- DMN (decision tables)
+
+**Total**: 24 international standards from 6 standards bodies
 
 ## Quick Start
 
@@ -168,6 +175,25 @@ else:
     print(f"Semantic errors: {len(result.semantic_errors)}")
 ```
 
+### Govern SDC Data
+
+```bash
+pip install sdcgovernance
+```
+
+```python
+from sdcgovernance import GovernanceEngine
+
+engine = GovernanceEngine(model)
+result = engine.evaluate_transition(
+    current_state="draft",
+    target_state="review",
+    workflow_tree=tree,
+)
+print(result.decision)       # Decision.PERMIT
+print(result.receipt.hash)   # SHA-256 tamper-evident receipt
+```
+
 ### Explore the Reference Model
 
 ```bash
@@ -215,7 +241,7 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 - **Website**: [https://semanticdatacharter.com](https://semanticdatacharter.com)
 - **Specification**: [sdc4-specification.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/sdc4/specification/sdc4-specification.md)
 - **Practitioners**: [https://axius-sdc.com/practitioners/](https://axius-sdc.com/practitioners/)
-- **PyPI Packages**: [sdcvalidator](https://pypi.org/project/sdcvalidator/) | [form2sdc](https://pypi.org/project/form2sdc/)
+- **PyPI Packages**: [sdcvalidator](https://pypi.org/project/sdcvalidator/) | [sdcgovernance](https://pypi.org/project/sdcgovernance/) | [form2sdc](https://pypi.org/project/form2sdc/)
 - **Historical Archive**: [GitHub](https://github.com/Axius-SDC/historical-archive)
 - **AI Instructions**: [ai.txt](https://semanticdatacharter.com/ai.txt)
 
