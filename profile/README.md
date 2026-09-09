@@ -59,7 +59,7 @@ SDC combines:
 
 ### Core Repositories
 
-- **[SDCRM](https://github.com/SemanticDataCharter/SDCRM)** - Reference model, schemas, and specification
+- **[SDCRM](https://github.com/SemanticDataCharter/SDCRM)** v4.1.0 - Reference model, schemas, and specification ([releases](https://github.com/SemanticDataCharter/SDCRM/releases))
 - **[sdc-xml2graph](https://github.com/SemanticDataCharter/sdc-xml2graph)** v4.0.0 - Transform SDC4 XML to knowledge graphs (Q1-2026)
 
 ### Template Creation
