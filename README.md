@@ -89,7 +89,6 @@ This organization maintains the core specification and reference implementation 
 - **Website**: https://semanticdatacharter.com
 - **Specification**: [sdc4-specification.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/sdc4/specification/sdc4-specification.md)
 - **AI Instructions**: [ai.txt](https://semanticdatacharter.com/ai.txt)
-- **Historical Archive**: [GitHub](https://github.com/Axius-SDC/historical-archive)
 
 ## Contributing to This Repository
 
@@ -128,5 +127,3 @@ git push origin main
 ---
 
 **Building the future of trusted data together.** 🚀
-
-*Last Updated: April 2026*
