@@ -2,7 +2,7 @@
 
 This repository contains **organization-wide community health files** and governance documentation for the [Semantic Data Charter](https://semanticdatacharter.com) open source organization.
 
-**The SemanticDataCharter GitHub organization and all repositories within it are controlled and maintained by [Axius SDC, Inc.](https://axius-sdc.github.io)**
+**The SemanticDataCharter GitHub organization and all repositories within it are controlled and maintained by [Axius SDC, Inc.](https://axius-sdc.com)**
 
 ## Purpose
 

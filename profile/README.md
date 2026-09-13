@@ -4,7 +4,7 @@
 
 The **Semantic Data Charter (SDC)** is an open specification for creating self-describing, semantically rich data models that work seamlessly across systems, languages, and autonomous agents.
 
-> **This organization and all repositories within it are controlled and maintained by [Axius SDC, Inc.](https://axius-sdc.github.io)**
+> **This organization and all repositories within it are controlled and maintained by [Axius SDC, Inc.](https://axius-sdc.com)**
 
 ## Vision
 
@@ -273,7 +273,7 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 
 ## About
 
-**Controlled and maintained by**: [Axius SDC, Inc.](https://axius-sdc.github.io)
+**Controlled and maintained by**: [Axius SDC, Inc.](https://axius-sdc.com)
 **Contact**: contact@axius-sdc.com
 **License**: Apache 2.0 (specification and open source tools)
 
