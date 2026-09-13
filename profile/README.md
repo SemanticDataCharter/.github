@@ -78,6 +78,28 @@ SDC combines:
 
 All SDC projects use **4.x.x** versioning where the MAJOR version (4) represents the current SDC generation.
 
+### Two organizations, and what the line between them means
+
+You will see work under two GitHub organizations. The split is deliberate and the axis is
+stewardship, not licensing.
+
+- **[SemanticDataCharter](https://github.com/SemanticDataCharter)** holds **the specification and its
+  open reference implementation**: the reference model, the open component library, and the tools
+  that validate and govern against it. This is the part intended to outlive any single company, and
+  it is the part a foundation home would take. Everything here is Apache License 2.0. A repository
+  that is temporarily private is unreleased, not proprietary.
+- **[Axius-SDC](https://github.com/Axius-SDC)** holds the work of **Axius SDC, Inc.**, the company
+  that maintains SDC: products, demos and commercial platforms. **Some of it is open source too**,
+  for example [CordovaOS](https://github.com/Axius-SDC/CordovaOS). Licensing there is per repository;
+  check the LICENSE file.
+
+The short version: **this organization is the standard, the other is the company.** Contributions to
+repositories here are covered by the
+[Contributor License Agreement](https://github.com/SemanticDataCharter/.github/blob/main/CLA/README.md).
+
+`AxiusSDC`, without the hyphen, is not an organization we use. If you find a link pointing at it,
+it is a typo and we would be glad to hear about it.
+
 ## 25 Years of Engineering for This Moment
 
 SDC was not built in response to the AI era. It was built in anticipation of it.
@@ -221,10 +243,12 @@ We welcome contributions to all SDC projects!
 ### Getting Started
 
 1. Read the [Contributing Guidelines](CONTRIBUTING.md)
-2. Check the [Code of Conduct](CODE_OF_CONDUCT.md)
-3. Review the [Security Policy](SECURITY.md)
-4. Find a project that interests you
-5. Open an issue or PR
+2. Agree to the [Contributor License Agreement](CLA/README.md) before your first merge. You keep
+   ownership of your work; see the CLA README for what it grants and why.
+3. Check the [Code of Conduct](CODE_OF_CONDUCT.md)
+4. Review the [Security Policy](SECURITY.md)
+5. Find a project that interests you
+6. Open an issue or PR
 
 ### Repository-Specific Guidelines
 
