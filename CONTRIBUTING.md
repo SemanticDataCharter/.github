@@ -445,11 +445,31 @@ Contributors are recognized in:
 - Project documentation
 - Annual contributor acknowledgments
 
+### Contributor License Agreement
+
+**Before your first contribution is merged, we ask you to agree to a Contributor License Agreement.**
+
+- **[Individual CLA](CLA/ICLA.md)** if you are contributing on your own behalf.
+- **[Corporate CLA](CLA/CCLA.md)** if your employer has rights to work you create.
+
+**You keep ownership of your contribution.** A CLA is not an assignment, and nothing in it limits
+what you may do with your own work elsewhere. What it grants is the right to sublicense: Axius SDC
+maintains open source projects under Apache License 2.0 and also distributes commercial and
+sovereign-deployment products built on the same codebase, and a contribution cannot lawfully be
+carried into those without that right. We would rather say so before you write the code than
+afterwards.
+
+To agree, post this comment on your first pull request, with your full legal name and the GitHub
+username you contribute under:
+
+> I have read the Axius SDC Individual Contributor License Agreement and I hereby accept its terms.
+
+See [CLA/README.md](CLA/README.md) for the full explanation, or email legal@axius-sdc.com.
+
 ### License
 
-By contributing, you agree that your contributions will be licensed under the same license as the project:
-- Most projects: **Apache 2.0**
-- Check LICENSE file in specific repository
+Repositories carry their own LICENSE file, and that file governs the distribution of the repository.
+Most projects are **Apache License 2.0**. Check the LICENSE file in the specific repository.
 
 ## Questions?
 
