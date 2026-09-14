@@ -41,7 +41,7 @@ SDC combines:
 ## Key Features
 
 - **Language Agnostic** - Model in Portuguese, French, Japanese, Spanish, etc.
-- **Standards-Aligned** - Aligned with the vocabularies of 24 international standards from W3C, OASIS, OMG, ISO, IETF, and IANA
+- **Standards-Aligned** - Aligned with the vocabularies of 20+ international standards from eight bodies (W3C, ISO, OASIS, OMG, IETF, IEEE, IANA, NIST), enumerated in [SDCRM/STANDARDS.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/STANDARDS.md)
 - **AI Governance** - Governance decision engine returning OASIS XACML decisions with tamper-evident receipts
 - **Namespace Versioning** - CUIDs for immutable, evolvable components
 - **Multi-Format Export** - RDF, OWL, SHACL, FHIR, GraphQL, JSON, GQL
@@ -70,7 +70,7 @@ SDC combines:
 ### Validation & Governance
 
 - **[sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator)** v4.5.0 - SDC4 structural validator with two-tier error classification ([PyPI](https://pypi.org/project/sdcvalidator/))
-- **[sdcgovernance (Python)](https://github.com/SemanticDataCharter/sdcgovernance)** v4.2.0 - Governance decision engine, aligned with the vocabularies of 24 standards from W3C, OASIS, OMG, ISO, IETF, IANA. Returns OASIS XACML decisions (PERMIT/DENY/INDETERMINATE/NOT_APPLICABLE) with SHA-256 hash-chained tamper-evident receipts. MCP server included. ([PyPI](https://pypi.org/project/sdcgovernance/))
+- **[sdcgovernance (Python)](https://github.com/SemanticDataCharter/sdcgovernance)** v4.2.0 - Governance decision engine, aligned with the vocabularies of 15 formal standards, nine of them core (per-repository inventory in [SDCRM/STANDARDS.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/STANDARDS.md)). Returns OASIS XACML decisions (PERMIT/DENY/INDETERMINATE/NOT_APPLICABLE) with SHA-256 hash-chained tamper-evident receipts. MCP server included. ([PyPI](https://pypi.org/project/sdcgovernance/))
 
 ### Commercial Platform
 
@@ -106,13 +106,13 @@ SDC was not built in response to the AI era. It was built in anticipation of it.
 
 **Evolution Timeline:**
 - **2000-2009**: FreePM/TORCH (open source healthcare applications)
-- **2009-2017**: MLHIM (430 commits, 165+ citations, healthcare focus)
+- **2009-2017**: MLHIM (430 commits, 160+ citations, healthcare focus)
 - **2012-2025**: S3Model (1,586 commits, domain-agnostic generalization)
 - **2025-present**: SDC4 (commercial production platform)
 
 **Lineage Validation (MLHIM and S3Model):**
-- 12+ peer-reviewed papers (AMIA, JCI, JAMA, IEEE/ACM)
-- 165+ citations on Google Scholar
+- 10 peer-reviewed publications, 2002 to 2016 (Elsevier, Springer, IEEE, BMC), plus a JAMA letter; [full list with DOIs](https://axius-sdc.com/tim-cv.html#peer-reviewed-publications)
+- 160+ citations on Google Scholar
 - Applied in healthcare, research, and enterprise contexts
 
 These attach to the predecessor projects. SDC4 inherits the modeling approach, not the citation record.
@@ -131,8 +131,6 @@ SDC aligns with the vocabularies of international standards:
 - SHACL (validation)
 
 **ISO Standards:**
-- ISO 11179 (metadata registries)
-- ISO 20022 (financial messaging)
 - ISO/IEC 21838 (top-level ontologies)
 - ISO 21090 (healthcare data types)
 
@@ -147,7 +145,7 @@ SDC aligns with the vocabularies of international standards:
 **OMG Standards:**
 - DMN (decision tables)
 
-**Total**: 24 international standards from 6 standards bodies
+**Total**: 20+ international standards from eight bodies (W3C, ISO, OASIS, OMG, IETF, IEEE, IANA, NIST), enumerated in [SDCRM/STANDARDS.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/STANDARDS.md). That file is the authoritative inventory; the lists above are examples.
 
 ## Quick Start
 
