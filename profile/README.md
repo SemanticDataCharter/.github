@@ -69,8 +69,9 @@ SDC combines:
 
 ### Validation & Governance
 
-- **[sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator)** v4.5.0 - SDC4 structural validator with two-tier error classification ([PyPI](https://pypi.org/project/sdcvalidator/))
-- **[sdcgovernance (Python)](https://github.com/SemanticDataCharter/sdcgovernance)** v4.2.0 - Governance decision engine, aligned with the vocabularies of 15 formal standards, nine of them core (per-repository inventory in [SDCRM/STANDARDS.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/STANDARDS.md)). Returns OASIS XACML decisions (PERMIT/DENY/INDETERMINATE/NOT_APPLICABLE) with SHA-256 hash-chained tamper-evident receipts. MCP server included. ([PyPI](https://pypi.org/project/sdcgovernance/))
+- **[sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator)** v4.5.1 - SDC4 structural validator with two-tier error classification ([PyPI](https://pypi.org/project/sdcvalidator/))
+- **[sdcgovernance (Python)](https://github.com/SemanticDataCharter/sdcgovernance)** v4.2.1 - Governance decision engine, aligned with the vocabularies of 15 formal standards, nine of them core (per-repository inventory in [SDCRM/STANDARDS.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/STANDARDS.md)). Returns OASIS XACML decisions (PERMIT/DENY/INDETERMINATE/NOT_APPLICABLE) with SHA-256 hash-chained tamper-evident receipts. MCP server included. ([PyPI](https://pypi.org/project/sdcgovernance/))
+- **[sdcreceipt (Python)](https://github.com/SemanticDataCharter/sdcreceipt)** v4.2.2 - Verify and settle VSL Settlement Receipts. Offline verification against published keys, no account and no network; party key setup, trigger signing, settle; eleven published conformance vectors; MCP server in the registry as `io.github.SemanticDataCharter/sdcreceipt`. ([PyPI](https://pypi.org/project/sdcreceipt/))
 
 ### Commercial Platform
 
@@ -266,7 +267,7 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 - **Website**: [https://semanticdatacharter.com](https://semanticdatacharter.com)
 - **Specification**: [sdc4-specification.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/sdc4/specification/sdc4-specification.md)
 - **Practitioners**: [https://axius-sdc.com/practitioners/](https://axius-sdc.com/practitioners/)
-- **PyPI Packages**: [sdcvalidator](https://pypi.org/project/sdcvalidator/) | [sdcgovernance](https://pypi.org/project/sdcgovernance/) | [form2sdc](https://pypi.org/project/form2sdc/)
+- **PyPI Packages**: [sdcvalidator](https://pypi.org/project/sdcvalidator/) | [sdcgovernance](https://pypi.org/project/sdcgovernance/) | [sdcreceipt](https://pypi.org/project/sdcreceipt/) | [form2sdc](https://pypi.org/project/form2sdc/)
 - **AI Instructions**: [ai.txt](https://semanticdatacharter.com/ai.txt)
 
 ## About

@@ -58,11 +58,13 @@ Security updates are provided for the following versions:
 | **sdc-xml2graph** | 4.0.x | ✅ Yes (Q1-2026) |
 | **SDCObsidianTemplate** | 4.0.x | ✅ Yes |
 
-### Validation Libraries
+### Validation, Governance and Settlement Libraries
 
 | Project | Version | Supported |
 | ------- | ------- | --------- |
-| **sdcvalidator (Python)** | 4.0.x | ✅ Yes |
+| **sdcvalidator (Python)** | 4.5.x | ✅ Yes |
+| **sdcgovernance (Python)** | 4.2.x | ✅ Yes |
+| **sdcreceipt (Python)** | 4.2.x | ✅ Yes (4.2.0 and earlier: no; see the repository SECURITY.md) |
 | **sdcvalidatorJS (TypeScript)** | 4.0.x | ✅ Yes |
 
 ### Commercial Platform
