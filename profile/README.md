@@ -70,7 +70,7 @@ SDC combines:
 ### Validation & Governance
 
 - **[sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator)** v4.5.2 - SDC4 structural validator with two-tier error classification ([PyPI](https://pypi.org/project/sdcvalidator/))
-- **[sdcgovernance (Python)](https://github.com/SemanticDataCharter/sdcgovernance)** v4.2.2 - Governance decision engine, aligned with the vocabularies of 15 formal standards, nine of them core (per-repository inventory in [SDCRM/STANDARDS.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/STANDARDS.md)). Returns OASIS XACML decisions (PERMIT/DENY/INDETERMINATE/NOT_APPLICABLE) with SHA-256 hash-chained tamper-evident receipts. MCP server included. ([PyPI](https://pypi.org/project/sdcgovernance/))
+- **[sdcgovernance (Python)](https://github.com/SemanticDataCharter/sdcgovernance)** v4.2.3 - Governance decision engine, aligned with the vocabularies of 15 formal standards, nine of them core (per-repository inventory in [SDCRM/STANDARDS.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/STANDARDS.md)). Returns OASIS XACML decisions (PERMIT/DENY/INDETERMINATE/NOT_APPLICABLE) with SHA-256 hash-chained tamper-evident receipts. MCP server included. ([PyPI](https://pypi.org/project/sdcgovernance/))
 - **[sdcreceipt (Python)](https://github.com/SemanticDataCharter/sdcreceipt)** v4.2.2 - Verify and settle VSL Settlement Receipts. Offline verification against published keys, no account and no network; party key setup, trigger signing, settle; eleven published conformance vectors; MCP server in the registry as `io.github.SemanticDataCharter/sdcreceipt`. ([PyPI](https://pypi.org/project/sdcreceipt/))
 
 ### Commercial Platform
