@@ -54,24 +54,22 @@ Security updates are provided for the following versions:
 
 | Project | Version | Supported |
 | ------- | ------- | --------- |
-| **SDCRM** | 4.0.x | ✅ Yes |
-| **sdc-xml2graph** | 4.0.x | ✅ Yes (Q1-2026) |
-| **SDCObsidianTemplate** | 4.0.x | ✅ Yes |
+| **SDCRM** | 4.1.x | ✅ Yes |
+| **sdcreader** | 4.0.x | ✅ Yes |
 
 ### Validation, Governance and Settlement Libraries
 
 | Project | Version | Supported |
 | ------- | ------- | --------- |
-| **sdcvalidator (Python)** | 4.5.x | ✅ Yes |
+| **sdcvalidator (Python)** | 4.5.x | ✅ Yes (4.3.x, 4.4.x: security fixes only) |
 | **sdcgovernance (Python)** | 4.2.x | ✅ Yes |
-| **sdcreceipt (Python)** | 4.2.x | ✅ Yes (4.2.0 and earlier: no; see the repository SECURITY.md) |
-| **sdcvalidatorJS (TypeScript)** | 4.0.x | ✅ Yes |
+| **sdcreceipt (Python)** | 4.3.x | ✅ Yes (4.2.0 and earlier: no; see the repository SECURITY.md) |
 
 ### Commercial Platform
 
 | Project | Version | Supported |
 | ------- | ------- | --------- |
-| **[SDCStudio](https://axius-sdc.com)** | 4.0.x | ✅ Yes (proprietary support) |
+| **[SDCStudio](https://axius-sdc.com)** | 4.14.x | ✅ Yes (proprietary support) |
 
 **Note**: All SDC4 projects use 4.x.x versioning where MAJOR version (4) = SDC generation.
 
@@ -198,20 +196,7 @@ pip-audit
 pip install --upgrade sdcvalidator
 
 # Verify checksums
-pip install sdcvalidator==4.0.1 --require-hashes
-```
-
-**TypeScript Projects:**
-
-```bash
-# Check for known vulnerabilities
-npm audit
-
-# Fix automatically when possible
-npm audit fix
-
-# Update dependencies
-npm update sdcvalidatorjs
+pip install sdcvalidator==4.5.2 --require-hashes
 ```
 
 #### Secrets Management
@@ -336,26 +321,6 @@ pip-audit
 
 # Scan for secrets
 detect-secrets scan
-```
-
-### sdcvalidatorJS (TypeScript)
-
-**Security Features:**
-- Safe XML parsing (@xmldom/xmldom with no external entities)
-- TypeScript strict mode for type safety
-- ESLint security rules
-- npm audit integration
-
-**Security Testing:**
-```bash
-# Run security tests
-npm test
-
-# Check dependencies
-npm audit
-
-# Fix vulnerabilities
-npm audit fix
 ```
 
 ### SDCStudio (Django)

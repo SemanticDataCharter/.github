@@ -44,7 +44,7 @@ SDC combines:
 - **Standards-Aligned** - Aligned with the vocabularies of 20+ international standards from eight bodies (W3C, ISO, OASIS, OMG, IETF, IEEE, IANA, NIST), enumerated in [SDCRM/STANDARDS.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/STANDARDS.md)
 - **AI Governance** - Governance decision engine returning OASIS XACML decisions with tamper-evident receipts
 - **Namespace Versioning** - CUIDs for immutable, evolvable components
-- **Multi-Format Export** - RDF, OWL, SHACL, FHIR, GraphQL, JSON, GQL
+- **Multi-Format Export** - RDF, OWL, SHACL, FHIR, GraphQL, JSON, GQL; catalog descriptions in DCAT-US, DCAT-AP, HealthDCAT-AP and CDIF
 
 ## Use Cases
 
@@ -60,22 +60,50 @@ SDC combines:
 ### Core Repositories
 
 - **[SDCRM](https://github.com/SemanticDataCharter/SDCRM)** v4.1.0 - Reference model, schemas, and specification ([releases](https://github.com/SemanticDataCharter/SDCRM/releases))
-- **[sdc-xml2graph](https://github.com/SemanticDataCharter/sdc-xml2graph)** v4.0.0 - Transform SDC4 XML to knowledge graphs (Q1-2026)
+- **[sdcreader](https://github.com/SemanticDataCharter/sdcreader)** v4.0.0 - Reads a published SDC data model package for projection into other standardized formats; the shared reader the projection tools below are built on ([PyPI](https://pypi.org/project/sdcreader/))
 
-### Template Creation
-
-- **[Form2SDCTemplate](https://github.com/SemanticDataCharter/Form2SDCTemplate)** v4.4.0 - Convert PDF, DOCX, and image forms into SDC templates using Gemini AI. Available as a [Python package](https://pypi.org/project/form2sdc/), [Google Colab notebook](https://colab.research.google.com/github/SemanticDataCharter/Form2SDCTemplate/blob/main/notebooks/form_to_template.ipynb), or LLM instruction file.
-- **[SDCObsidianTemplate](https://github.com/SemanticDataCharter/SDCObsidianTemplate)** v4.3.0 - Interactive Obsidian Templater plugin for building SDC markdown templates with guided prompts, domain-aware defaults, and SDC participation model support.
-
-### Validation & Governance
+### Validation, Governance & Settlement
 
 - **[sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator)** v4.5.2 - SDC4 structural validator with two-tier error classification ([PyPI](https://pypi.org/project/sdcvalidator/))
-- **[sdcgovernance (Python)](https://github.com/SemanticDataCharter/sdcgovernance)** v4.2.3 - Governance decision engine, aligned with the vocabularies of 15 formal standards, nine of them core (per-repository inventory in [SDCRM/STANDARDS.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/STANDARDS.md)). Returns OASIS XACML decisions (PERMIT/DENY/INDETERMINATE/NOT_APPLICABLE) with SHA-256 hash-chained tamper-evident receipts. MCP server included. ([PyPI](https://pypi.org/project/sdcgovernance/))
-- **[sdcreceipt (Python)](https://github.com/SemanticDataCharter/sdcreceipt)** v4.2.2 - Verify and settle VSL Settlement Receipts. Offline verification against published keys, no account and no network; party key setup, trigger signing, settle; eleven published conformance vectors; MCP server in the registry as `io.github.SemanticDataCharter/sdcreceipt`. ([PyPI](https://pypi.org/project/sdcreceipt/))
+- **[sdcgovernance (Python)](https://github.com/SemanticDataCharter/sdcgovernance)** v4.2.4 - Governance decision engine, aligned with the vocabularies of 15 formal standards, nine of them core (per-repository inventory in [SDCRM/STANDARDS.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/STANDARDS.md)). Returns OASIS XACML decisions (PERMIT/DENY/INDETERMINATE/NOT_APPLICABLE) with SHA-256 hash-chained tamper-evident receipts. MCP server included. ([PyPI](https://pypi.org/project/sdcgovernance/))
+- **[sdcreceipt (Python)](https://github.com/SemanticDataCharter/sdcreceipt)** v4.3.0 - Verify and settle VSL Settlement Receipts, 1.0 and 1.1 (1.1 carries two issuer signatures, ES256 and the post-quantum ML-DSA-65, both required). Offline verification against published keys, no account and no network; party key setup, trigger signing, settle; sixteen published conformance vectors; MCP server in the registry as `io.github.SemanticDataCharter/sdcreceipt`. ([PyPI](https://pypi.org/project/sdcreceipt/))
+
+### Projections: one model, every catalog a projection
+
+Each tool reads a published model's package and writes the dataset description a catalog standard asks for, checked with that standard body's own validator.
+
+- **[sdc_dcat3_us](https://github.com/SemanticDataCharter/sdc_dcat3_us)** v4.0.0 - DCAT-US 3.0, the US federal data catalog standard: a `data.json` Catalog with the model's schema as the data dictionary (`describedBy`), checked with GSA's JSON Schema and Data.gov's validator. Sample: the seven FAIR Data Demo models.
+- **[sdc_dcat3_ap](https://github.com/SemanticDataCharter/sdc_dcat3_ap)** v4.0.0 - DCAT-AP 3.0.1, for European data portals, checked with SEMIC's SHACL shapes and the Interoperability Test Bed.
+- **[sdc_healthdcat_ap](https://github.com/SemanticDataCharter/sdc_healthdcat_ap)** v4.0.0 - HealthDCAT-AP, for the secondary use of health data under the European Health Data Space.
+- **[sdc_cdif](https://github.com/SemanticDataCharter/sdc_cdif)** v4.0.0 - CODATA's Cross-Domain Interoperability Framework: Core, Discovery, Data Description for every variable, Codelists, and the sixteen exceptional values as a sentinel value domain, checked with CDIF's own validators.
+
+### Modeling Tools
+
+- **[SDCBench](https://github.com/SemanticDataCharter/SDCBench)** v4.0.0-beta.4 - A desktop bench for domain experts: diagram a data model by reusing published SDCStudio components.
+- **[Form2SDCTemplate](https://github.com/SemanticDataCharter/Form2SDCTemplate)** v4.6.0 - Convert PDF, DOCX, and image forms into SDC templates using Gemini AI. Available as a [Python package](https://pypi.org/project/form2sdc/), [Google Colab notebook](https://colab.research.google.com/github/SemanticDataCharter/Form2SDCTemplate/blob/main/notebooks/form_to_template.ipynb), or LLM instruction file.
+- **[XMI2SDC](https://github.com/SemanticDataCharter/XMI2SDC)** v4.1.1 - From UML models (Sparx EA, MagicDraw) exported as XMI to SDC models ([PyPI](https://pypi.org/project/xmi2sdc/))
+
+### Agents
+
+- **[SDC_Agents](https://github.com/SemanticDataCharter/SDC_Agents)** v4.4.1 - Purpose-scoped agent toolsets that turn the systems you already run into SDC4-compliant Governed Data Records ([PyPI](https://pypi.org/project/sdc-agents/)); also in Google's ADK community toolsets
+- **[SDC_AgentsSMB](https://github.com/SemanticDataCharter/SDC_AgentsSMB)** v4.0.1 - SDC Agents for personal and small-business environments
+- **[SDC_Agents_Demo](https://github.com/SemanticDataCharter/SDC_Agents_Demo)** - A small worked example of SDC Agents
+
+### Clone-and-Run Demonstrations
+
+Each runs on your own machine from a clone, with no account and nothing hosted.
+
+- **[HalvorsenDemo](https://github.com/SemanticDataCharter/HalvorsenDemo)** v4.1.10 - A fictitious supplier and two retailers exchange seven OASIS UBL 2.3 business documents as Governed Data Records, order to payment in eleven beats, every deduction settled once with a Settlement Receipt that verifies offline. ([page](https://axius-sdc.com/products/halvorsen.html))
+- **[FAIR_Data_Demo](https://github.com/SemanticDataCharter/FAIR_Data_Demo)** v4.2.1 - NHANES, BRFSS and CMS DE-SynPUF on one published component library: seven models, 84,352 records, twenty components the studies share. ([page](https://axius-sdc.com/products/fair-data-demo.html))
+- **[CordovaOS](https://github.com/Axius-SDC/CordovaOS)** v4.4.2 (in the Axius-SDC organization) - A synthetic nation of ten government institutions on one reference model, with zero lines of integration code. ([page](https://axius-sdc.com/products/cordovaos.html))
+
+### Upstream Contributions
+
+- **[adk-python-community](https://github.com/SemanticDataCharter/adk-python-community)** and **[adk-docs](https://github.com/SemanticDataCharter/adk-docs)** - Forks for our contributions to Google's Agent Development Kit: the SDC Agents toolsets (merged May 2026) and their catalog entry.
 
 ### Commercial Platform
 
-- **[SDCStudio](https://sdcstudio.axius-sdc.com)** v4.0.0 - Web application for AI-powered SDC model generation, schema export, and semantic enrichment
+- **[SDCStudio](https://sdcstudio.axius-sdc.com)** v4.14.15 - Web application for AI-powered SDC model generation, schema export, semantic enrichment, and the Verifiable Settlement Layer
 
 All SDC projects use **4.x.x** versioning where the MAJOR version (4) represents the current SDC generation.
 
@@ -85,12 +113,12 @@ You will see work under two GitHub organizations. The split is deliberate and th
 stewardship, not licensing.
 
 - **[SemanticDataCharter](https://github.com/SemanticDataCharter)** holds **the specification and its
-  open reference implementation**: the reference model, the open component library, and the tools
-  that validate and govern against it. This is the part intended to outlive any single company, and
+  open reference implementation**: the reference model, the open component library, the tools
+  that validate, govern and project against it, and open demonstrations built only on them. This is the part intended to outlive any single company, and
   it is the part a foundation home would take. Everything here is Apache License 2.0. A repository
   that is temporarily private is unreleased, not proprietary.
 - **[Axius-SDC](https://github.com/Axius-SDC)** holds the work of **Axius SDC, Inc.**, the company
-  that maintains SDC: products, demos and commercial platforms. **Some of it is open source too**,
+  that maintains SDC: products, commercial platforms and some demos. **Some of it is open source too**,
   for example [CordovaOS](https://github.com/Axius-SDC/CordovaOS). Licensing there is per repository;
   check the LICENSE file.
 
@@ -267,7 +295,7 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 - **Website**: [https://semanticdatacharter.com](https://semanticdatacharter.com)
 - **Specification**: [sdc4-specification.md](https://github.com/SemanticDataCharter/SDCRM/blob/main/sdc4/specification/sdc4-specification.md)
 - **Practitioners**: [https://axius-sdc.com/practitioners/](https://axius-sdc.com/practitioners/)
-- **PyPI Packages**: [sdcvalidator](https://pypi.org/project/sdcvalidator/) | [sdcgovernance](https://pypi.org/project/sdcgovernance/) | [sdcreceipt](https://pypi.org/project/sdcreceipt/) | [form2sdc](https://pypi.org/project/form2sdc/)
+- **PyPI Packages**: [sdcvalidator](https://pypi.org/project/sdcvalidator/) | [sdcgovernance](https://pypi.org/project/sdcgovernance/) | [sdcreceipt](https://pypi.org/project/sdcreceipt/) | [sdcreader](https://pypi.org/project/sdcreader/) | [form2sdc](https://pypi.org/project/form2sdc/) | [sdc-agents](https://pypi.org/project/sdc-agents/) | [xmi2sdc](https://pypi.org/project/xmi2sdc/)
 - **AI Instructions**: [ai.txt](https://semanticdatacharter.com/ai.txt)
 
 ## About
