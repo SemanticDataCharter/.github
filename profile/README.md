@@ -80,7 +80,7 @@ Each tool reads a published model's package and writes the dataset description a
 ### Modeling Tools
 
 - **[SDCBench](https://github.com/SemanticDataCharter/SDCBench)** v4.0.0-beta.4 - A desktop bench for domain experts: diagram a data model by reusing published SDCStudio components.
-- **[Form2SDCTemplate](https://github.com/SemanticDataCharter/Form2SDCTemplate)** v4.6.0 - Convert PDF, DOCX, and image forms into SDC templates using Gemini AI. Available as a [Python package](https://pypi.org/project/form2sdc/), [Google Colab notebook](https://colab.research.google.com/github/SemanticDataCharter/Form2SDCTemplate/blob/main/notebooks/form_to_template.ipynb), or LLM instruction file.
+- **[Form2SDCTemplate](https://github.com/SemanticDataCharter/Form2SDCTemplate)** v4.6.0 - Convert PDF, DOCX, and image forms into SDC templates using Gemini AI. Available as a [Python package](https://pypi.org/project/form2sdc/), [Google Colab notebook](https://colab.research.google.com/github/SemanticDataCharter/Form2SDCTemplate/blob/main/notebooks/form_to_template.ipynb), or LLM instruction file. **Not for regulated data:** the notebook and Python path send the form to Google's Gemini API.
 - **[XMI2SDC](https://github.com/SemanticDataCharter/XMI2SDC)** v4.1.1 - From UML models (Sparx EA, MagicDraw) exported as XMI to SDC models ([PyPI](https://pypi.org/project/xmi2sdc/))
 
 ### Agents
@@ -181,6 +181,11 @@ SDC aligns with the vocabularies of international standards:
 ### Convert a Form to an SDC Template
 
 The fastest path from existing form to SDC model:
+
+> **Not for regulated data.** This path sends the form you upload to Google's Gemini API. Do not use it with protected
+> health information, controlled unclassified information, or anything under a data use agreement. Upload blank forms,
+> not completed ones. Where even a blank form can't leave your environment, give the
+> [instruction file](https://github.com/SemanticDataCharter/Form2SDCTemplate) to a model that runs inside it.
 
 1. Open the [Form2SDCTemplate Colab notebook](https://colab.research.google.com/github/SemanticDataCharter/Form2SDCTemplate/blob/main/notebooks/form_to_template.ipynb)
 2. Enter your free [Google AI API key](https://aistudio.google.com/apikey)
