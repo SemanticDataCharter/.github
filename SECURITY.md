@@ -65,6 +65,15 @@ Security updates are provided for the following versions:
 | **sdcgovernance (Python)** | 4.2.x | ✅ Yes |
 | **sdcreceipt (Python)** | 4.3.x | ✅ Yes (4.2.0 and earlier: no; see the repository SECURITY.md) |
 
+### Projection Libraries
+
+| Project | Version | Supported |
+| ------- | ------- | --------- |
+| **sdccdif (Python)** | 4.1.x | ✅ Yes |
+| **sdcdcatus (Python)** | 4.1.x | ✅ Yes |
+| **sdcdcatap (Python)** | 4.1.x | ✅ Yes |
+| **sdchealthdcatap (Python)** | 4.1.x | ✅ Yes |
+
 ### Commercial Platform
 
 | Project | Version | Supported |

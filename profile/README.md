@@ -60,7 +60,7 @@ SDC combines:
 ### Core Repositories
 
 - **[SDCRM](https://github.com/SemanticDataCharter/SDCRM)** v4.1.0 - Reference model, schemas, and specification ([releases](https://github.com/SemanticDataCharter/SDCRM/releases))
-- **[sdcreader](https://github.com/SemanticDataCharter/sdcreader)** v4.1.0 - Reads a published SDC data model package for projection into other standardized formats; the shared reader the projection tools below are built on, and since 4.1.0 an MCP server (find, describe and walk a published model, read-only, no account; in the MCP registry) ([PyPI](https://pypi.org/project/sdcreader/))
+- **[sdcreader](https://github.com/SemanticDataCharter/sdcreader)** v4.2.0 - Reads a published SDC data model package for projection into other standardized formats; the shared reader the projection tools below are built on, and since 4.1.0 an MCP server (find, describe and walk a published model, read-only, no account; in the MCP registry) ([PyPI](https://pypi.org/project/sdcreader/))
 
 ### Validation, Governance & Settlement
 
@@ -70,12 +70,12 @@ SDC combines:
 
 ### Projections: one model, every catalog a projection
 
-Each tool reads a published model's package and writes the dataset description a catalog standard asks for, checked with that standard body's own validator.
+Each tool reads a published model's package and writes the dataset description a catalog standard asks for, checked with that standard body's own validator. Since 4.1.0 each is also an MCP server in the registry (`<name> mcp`), one tool that writes the description, on the scaffold `sdcreader.mcp`.
 
-- **[sdc_dcat3_us](https://github.com/SemanticDataCharter/sdc_dcat3_us)** v4.0.0 - DCAT-US 3.0, the US federal data catalog standard: a `data.json` Catalog with the model's schema as the data dictionary (`describedBy`), checked with GSA's JSON Schema and Data.gov's validator. Sample: the seven FAIR Data Demo models.
-- **[sdc_dcat3_ap](https://github.com/SemanticDataCharter/sdc_dcat3_ap)** v4.0.0 - DCAT-AP 3.0.1, for European data portals, checked with SEMIC's SHACL shapes and the Interoperability Test Bed.
-- **[sdc_healthdcat_ap](https://github.com/SemanticDataCharter/sdc_healthdcat_ap)** v4.0.0 - HealthDCAT-AP, for the secondary use of health data under the European Health Data Space.
-- **[sdc_cdif](https://github.com/SemanticDataCharter/sdc_cdif)** v4.0.0 - CODATA's Cross-Domain Interoperability Framework: Core, Discovery, Data Description for every variable, Codelists, and the sixteen exceptional values as a sentinel value domain, checked with CDIF's own validators.
+- **[sdc_dcat3_us](https://github.com/SemanticDataCharter/sdc_dcat3_us)** v4.1.0 ([PyPI `sdcdcatus`](https://pypi.org/project/sdcdcatus/), MCP server) - DCAT-US 3.0, the US federal data catalog standard: a `data.json` Catalog with the model's schema as the data dictionary (`describedBy`), checked with GSA's JSON Schema and Data.gov's validator. Sample: the seven FAIR Data Demo models.
+- **[sdc_dcat3_ap](https://github.com/SemanticDataCharter/sdc_dcat3_ap)** v4.1.0 ([PyPI `sdcdcatap`](https://pypi.org/project/sdcdcatap/), MCP server) - DCAT-AP 3.0.1, for European data portals, checked with SEMIC's SHACL shapes and the Interoperability Test Bed.
+- **[sdc_healthdcat_ap](https://github.com/SemanticDataCharter/sdc_healthdcat_ap)** v4.1.0 ([PyPI `sdchealthdcatap`](https://pypi.org/project/sdchealthdcatap/), MCP server) - HealthDCAT-AP, for the secondary use of health data under the European Health Data Space.
+- **[sdc_cdif](https://github.com/SemanticDataCharter/sdc_cdif)** v4.1.0 ([PyPI `sdccdif`](https://pypi.org/project/sdccdif/), MCP server) - CODATA's Cross-Domain Interoperability Framework: Core, Discovery, Data Description for every variable, Codelists, and the sixteen exceptional values as a sentinel value domain, checked with CDIF's own validators.
 
 ### Modeling Tools
 
