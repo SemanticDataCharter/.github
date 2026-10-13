@@ -55,7 +55,7 @@ Security updates are provided for the following versions:
 | Project | Version | Supported |
 | ------- | ------- | --------- |
 | **SDCRM** | 4.1.x | ✅ Yes |
-| **sdcreader** | 4.0.x | ✅ Yes |
+| **sdcreader** | 4.1.x | ✅ Yes (4.0.x: no MCP server; upgrade) |
 
 ### Validation, Governance and Settlement Libraries
 

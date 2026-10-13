@@ -60,7 +60,7 @@ SDC combines:
 ### Core Repositories
 
 - **[SDCRM](https://github.com/SemanticDataCharter/SDCRM)** v4.1.0 - Reference model, schemas, and specification ([releases](https://github.com/SemanticDataCharter/SDCRM/releases))
-- **[sdcreader](https://github.com/SemanticDataCharter/sdcreader)** v4.0.0 - Reads a published SDC data model package for projection into other standardized formats; the shared reader the projection tools below are built on ([PyPI](https://pypi.org/project/sdcreader/))
+- **[sdcreader](https://github.com/SemanticDataCharter/sdcreader)** v4.1.0 - Reads a published SDC data model package for projection into other standardized formats; the shared reader the projection tools below are built on, and since 4.1.0 an MCP server (find, describe and walk a published model, read-only, no account; in the MCP registry) ([PyPI](https://pypi.org/project/sdcreader/))
 
 ### Validation, Governance & Settlement
 
