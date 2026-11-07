@@ -6,7 +6,7 @@ We take the security of the Semantic Data Charter (SDC4) ecosystem seriously. If
 
 ### How to Report
 
-**Email**: security@axius-sdc.com
+**GitHub private vulnerability reporting**: open the Security tab of the affected repository and choose "Report a vulnerability". Do not send reports by email.
 
 **Please include:**
 - Description of the vulnerability
@@ -55,13 +55,13 @@ Security updates are provided for the following versions:
 | Project | Version | Supported |
 | ------- | ------- | --------- |
 | **SDCRM** | 4.1.x | ✅ Yes |
-| **sdcreader** | 4.1.x | ✅ Yes (4.0.x: no MCP server; upgrade) |
+| **sdcreader** | 4.4.x | ✅ Yes (earlier: upgrade) |
 
 ### Validation, Governance and Settlement Libraries
 
 | Project | Version | Supported |
 | ------- | ------- | --------- |
-| **sdcvalidator (Python)** | 4.5.x | ✅ Yes (4.3.x, 4.4.x: security fixes only) |
+| **sdcvalidator (Python)** | 4.6.x | ✅ Yes (4.3.x to 4.5.x: security fixes only) |
 | **sdcgovernance (Python)** | 4.2.x | ✅ Yes |
 | **sdcreceipt (Python)** | 4.3.x | ✅ Yes (4.2.0 and earlier: no; see the repository SECURITY.md) |
 
@@ -445,7 +445,7 @@ We currently do not have a formal bug bounty program, but we:
 - Provide attribution in release notes
 - Consider donations for significant findings
 
-Contact security@axius-sdc.com to discuss.
+Open a private vulnerability report on the affected repository to discuss.
 
 ## Security Resources
 
@@ -456,9 +456,8 @@ Contact security@axius-sdc.com to discuss.
 
 ## Contact
 
-- **Security Issues**: security@axius-sdc.com
+- **Security Issues**: GitHub private vulnerability reporting on the affected repository
 - **General Security Questions**: Use GitHub Discussions
-- **PGP Key**: Available upon request
 
 ---
 

@@ -293,7 +293,7 @@ We take security seriously. See our [Security Policy](SECURITY.md) for:
 - Security best practices
 - Response timeline
 
-**Report vulnerabilities**: security@axius-sdc.com
+**Report vulnerabilities**: GitHub private vulnerability reporting on the affected repository
 
 ## Resources
 

@@ -121,7 +121,7 @@ git push origin main
 ## Contact
 
 - **General**: contact@axius-sdc.com
-- **Security**: security@axius-sdc.com
+- **Security**: GitHub private vulnerability reporting (see [SECURITY.md](SECURITY.md))
 - **Code of Conduct**: conduct@axius-sdc.com
 
 ---

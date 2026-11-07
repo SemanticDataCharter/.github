@@ -474,7 +474,7 @@ Most projects are **Apache License 2.0**. Check the LICENSE file in the specific
 ## Questions?
 
 - **General questions**: Use GitHub Discussions
-- **Security issues**: security@axius-sdc.com (see [SECURITY.md](SECURITY.md))
+- **Security issues**: GitHub private vulnerability reporting (see [SECURITY.md](SECURITY.md))
 - **Code of Conduct concerns**: conduct@axius-sdc.com
 
 ---
